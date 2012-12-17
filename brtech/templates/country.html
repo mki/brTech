@@ -1,0 +1,8 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <p><span class="badge badge-success">Countries</span></p>
+    {% for c in Country %}
+        <a href="/cities/{{ c.slug }}" class="label">{{ c }}</a>
+    {% endfor %}
+{% endblock %}

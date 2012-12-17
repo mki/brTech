@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <p><a href="/cities/{{ city.country.slug }}" class="badge badge-important"><-</a> <span class="badge badge-success">Airports of city {{ slug }}</span></p>
+
+    {% for c in Airport %}
+        <a href="/airports/info/{{ c.slug }}" class="label">{{ c }}</a>
+    {% endfor %}
+
+{% endblock %}

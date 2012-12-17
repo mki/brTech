@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <p><a href="/airports/{{ Airport.city.slug }}" class="badge badge-important"><-</a> <span class="badge badge-success">Info of {{ Airport }}</span></p>
+
+    <span class="label">Name: {{ Airport.name_ru }}</span><br/>
+    <span class="label">location: {{ Airport.location }}</span><br/>
+    <span class="label">altitude: {{ Airport.altitude }}</span><br/>
+    <span class="label">timezone: {{ Airport.timezone }}</span><br/>
+    <span class="label">dst: {{ Airport.dst }}</span><br/>
+    <span class="label">city: {{ Airport.city }}</span><br/>
+{% endblock %}
